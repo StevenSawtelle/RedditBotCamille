@@ -17,7 +17,7 @@ if __name__ is '__main__':
     
 	r = praw.Reddit(user_agent='Camille Spellchecker for r/lol 1.0 by u/baconologist')
 
-	r.login('ActuallyItsCamille','camillebot')
+	r.login()
 
 	for c in praw.helpers.comment_stream(r, 'leagueoflegends'):
 		if(camille_misspelled(c)):
